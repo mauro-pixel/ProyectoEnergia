@@ -4,7 +4,8 @@ public class TipoEnergia extends Energia{
 
     //CONSTRUCTOR
 
-    public TipoEnergia(String nombreTipoEnergia) {
+    public TipoEnergia(String nombreTipoEnergia, Double produccionH, String tipo, Double consumoH) {
+        super(produccionH, tipo, consumoH);
         this.nombreTipoEnergia = nombreTipoEnergia;
     }
 

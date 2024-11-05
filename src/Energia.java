@@ -1,7 +1,7 @@
 public class Energia {
     public String tipo;
-    public Double produccionH;
-    public Double consumoH;
+    public double produccionH;
+    public double consumoH;
 
     public Energia(Double produccionH, String tipo, Double consumoH) {
         this.produccionH = produccionH;
@@ -17,34 +17,34 @@ public class Energia {
         this.tipo = tipo;
     }
 
-    public Double getProduccionH() {
+    public double getProduccionH() {
         return produccionH;
     }
 
-    public void setProduccionH(Double produccionH) {
+    public void setProduccionH(double produccionH) {
         this.produccionH = produccionH;
     }
 
-    public Double getConsumoH() {
+    public double getConsumoH() {
         return consumoH;
     }
 
-    public void setConsumo(Double consumoH) {
+    public void setConsumo(double consumoH) {
         this.consumoH = consumoH;
     }
 
     //METODOS
 
-    public void consumoEnergia(int horas, Double consumoH){
+    public void obtenerConsumoEnergia(int horas, double consumoH){
         double totalConsumo = horas * consumoH;
         if (totalConsumo==0){
             System.out.println("no tuvo consumo: " + totalConsumo);
         } else {
-        System.out.println("El consumo total de energia es " + totalConsumo);
+            System.out.println("El consumo total de energia es " + totalConsumo);
         }
     }
 
-    public void produccionEnergia(int horas, double produccionH) {
+    public void obtenerProduccionEnergia(int horas, double produccionH) {
         double totalProduccion = horas * produccionH;
         if (totalProduccion==0){
             System.out.println("no tuvo produccion: " + totalProduccion);
@@ -53,6 +53,4 @@ public class Energia {
         }
 
     }
-
-
 }
